@@ -1,0 +1,376 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #fdd9dc;
+    --cor1: #ffa3ab;
+    --cor2: #F51D2F;
+    --cor3: #DB1A2A;
+    --cor4: #A81421;
+    --cor5: #8e000c;
+
+    --font-padrao: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: var(--font-padrao);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 55px 0px 45px;
+    
+}
+
+.logo{
+    padding: 10px 10px 10px 10px;
+}
+
+
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+form {
+    display: block;
+    max-width: 700px;
+    min-width: 300px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 20px 39px  20px 20px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
+}
+  
+section {
+margin-top: 20px;
+color: black;
+}
+
+p {
+margin: 10px 0;
+color: black;
+}
+
+label {
+color: black;
+display: block;
+font-size: 16px;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+input,select {
+display: block;
+width: 100%;
+padding: 10px;
+
+font-size: 14px;
+border-radius: 5px;
+margin-top: 5px;
+}
+
+select{
+    padding-right: 10px;
+}
+
+input[type="radio"] {
+display: inline-block;
+width: auto;
+margin-right: 10px;
+}
+
+.obrigatorio {
+color: red;
+}
+
+#mensagem {
+resize: none;
+border-radius: 5px;
+padding: 10px 10px 10px 10px;
+height: 200px; /* Ajuste a altura conforme necessário */
+width: 100%; /* Ajuste a largura conforme necessário */
+}
+
+button[type="submit"] {
+display: block;
+width: 100%;
+padding: 10px;
+font-size: 16px;
+background-color: #4caf50;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button[type="submit"]:hover {
+background-color: #45a049;
+}
+
+
+#faleconoscofooter {
+background-color: var(--cor5);
+color: white;
+text-align: center;
+font-size: 0.8em;
+padding: 5px;
+text-align: left;
+text-align: center;
+
+}
+
+#faleconoscofooter h4 {
+font-size: 15px;
+margin-bottom: 20px;
+
+}
+
+#faleconoscofooter ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+
+}
+
+#faleconoscofooter li {
+font-size: 12px;
+margin-bottom: 10px;  
+
+}
+
+.cards{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* css das imag do carrocel do index */
+
+/* css da pagina de noticias */
+.title-noticia{
+    color:#d60707;
+   padding-top: 20px;
+   list-style-type: none;
+   font-family: var(--font-padrao);
+   font-size: x-large;
+}
+.text-noticia{
+    font-family: var(--font-padrao);
+    font-size: 20px;
+    text-align: justify;
+}
+.dia-notica{
+    text-align: justify;
+    color: #cdd8cf;
+    font-size: smaller;
+}
+
+
+#video-container {
+    display: none;
+}
+
+
+#fullscreen-video {
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    z-index: 9999;
+    animation-name: expand-video;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  
+  @keyframes expand-video {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
+nav {
+padding: 10px;
+display: flex;
+}
+
+nav > a {
+color: white;
+padding: 10px;
+text-decoration: none;
+font-weight: bold;
+transition-duration: .5s;
+font-size: 15px;
+font-family: 'Montserrat', sans-serif;
+}
+
+nav > a:hover  {
+background-color: var(--cor1);
+color: #8e000cc6;
+border-radius: 5px;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+padding: 10px 10px 10px 10px;
+content: "\25BC";
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: white; /* Alterei para branco para manter a consistência com os outros botões */
+padding: 10px; /* Alterei para 10px para manter o mesmo espaçamento */
+text-decoration: none;
+display: block;
+font-weight: bold;
+font-size: 15px;
+font-family: 'Montserrat', sans-serif;
+background-color: var(--cor1);
+text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+#linkdrop{
+    color: white;
+    padding: 10px;
+    padding-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#linkdrop:hover{
+    background-color: var(--cor1);
+    color: rgba(143, 0, 12, 0.776);
+    border-radius: 5px;
+}
+.arrow-down::after {
+    content: "\25BC"; /* Código Unicode para a seta para baixo */
+    display: inline-block;
+    margin-left: 5px; /* Espaçamento entre o texto e a seta */
+}
+.dropdown-content > a{
+    color: #8e000cc6;
+}
+
+.dropdown-content > a:hover{
+    background-color: var(--cor2);
+    color:white;
+}
+
+
+.list-especialidade > ul{
+    list-style-type: '🔴';
+    list-style-position: inside;
+    columns: 2;
+    padding: 10px 340px 10px 165px;
+}
+
+.list-convenio > ul {
+    list-style-type: '🔴';
+    list-style-position: inside;
+    columns: 2;
+    padding: 10px 340px 10px 280px;
+}
+
+.ulconvenio > li {
+    padding: 10px 10px 10px 358px;
+    font-family: var(--font-padrao);
+    font-size: 20px;
+}
+.ulespecialidade > li {
+    padding: 10px 10px 10px 358px;
+    font-family: var(--font-padrao);
+    font-size: 20px;
+}
+
+
+.h1convenio{
+    color: #A81421;
+    text-align: center;
+    font-family: var(--font-padrao);
+    margin-top: 20px;
+}
+
+.h1especialidade{
+    color: #A81421;
+    text-align: center;
+    font-family: var(--font-padrao);
+    margin-top: 20px;
+}
+
+.h2convenio{
+    color: #A81421;
+    text-align: center;
+    font-family: var(--font-padrao);
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.h2especialidade{
+    color: #A81421;
+    text-align: center;
+    font-family: var(--font-padrao);
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.pconvenio{
+    font-family: var(--font-padrao);
+    padding: 10px 380px 10px 530px;
+    font-size: 18px;
+}
+
+

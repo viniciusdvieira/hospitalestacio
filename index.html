@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital</title>
+    <link rel="shortcut icon" href="imagens/favicon1.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo"
+        ><img
+          src="imagens/logo2-menora.png"
+          alt="logo"
+          width="100"
+          height="110"
+      /></a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a id="linkdrop" href="#">Convênios e Especialidades<span class="arrow-down"></span></a>
+          <div class="dropdown-content">
+            <a href="convenio.html">Convênios</a>
+            <a href="especialidades.html">Especialidades</a>
+          </div>
+        </div>
+        <a href="noticias.html">Notícias</a>
+        <a href="curiosidade.html">Curiosidades</a>
+        <a href="faleconosco.html">Fale Conosco</a>
+        <a href="form.html">Agendamento</a>
+      </nav>
+  </header>
+    <!--começo do carrocel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="background-color: #8e000c;"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" style="background-color: #8e000c;"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2" style="background-color: #8e000c;"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="imagens/picture1.jpg" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="imagens/picture2.jpg" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="imagens/picture3.jpg" alt="Terceiro Slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #8e000c; border-radius: 10px;"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" >
+        <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #8e000c; border-radius: 10px;"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+
+    <!--grade de noticias -->
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col- sm">
+          <div style="text-align: center">
+            <img
+              src="imagens/medico.png"
+              class="img-noticias"
+              alt="imagem1"
+              height="400px"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="col-sm">
+          <div
+            class="alert alert-light"
+            role="alert"
+            style="padding-top: 100px"
+          >
+            <h4 class="alert-heading">Bem vindo ao Hospital Estacio</h4>
+            <hr />
+            <p>
+              Autocuidado não é só fazer exercício e skincare, você também
+              precisa deixar os seus exames em dia! Venha fazer um check up aqui
+              no <strong>Hospital Estacio! </strong>, Temos condições especiais
+              para você fazer uma revisão geral da sua saúde! Cuide de você e
+              venha nos fazer uma visita!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- segunda noticia -->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm">
+          <div
+            class="alert alert-light"
+            role="alert"
+            style="padding-top: 150px"
+          >
+            <h4 class="alert-heading">Atendimento</h4>
+            <hr>
+            <p>
+              Aqui no <strong>Hospital Estacio!</strong>, Temos as principais
+              especializações para atender você e sua família. Funcionamos de
+              segunda a sábado, das 8h às 19h e atendemos particular e plano!
+              Entre em contato no nosso WhatsApp para saber mais detalhes e
+              marcar a sua consulta.
+            </p>
+
+          </div>
+        </div>
+        <div class="col- sm">
+          <div style="text-align: center">
+            <img
+              src="imagens/idoso.png"
+              class="img-noticias"
+              alt="imagem1"
+              height="400px"
+              width="100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- terceira noticia -->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm">
+          <div
+            class="alert alert-light"
+            role="alert"
+            style="padding-top: 100px"
+          >
+            <h4 class="alert-heading">Descubra um pouco mais do nosso hospital</h4>
+            <p>
+              clique nas setas abaixo apara ver o video
+            </p>
+            <hr />
+            <a id="fullscreen-button"><img id="arrow-image" src="imagens/flecha.png" alt="flecha" width="50px"></a>
+            <div id="video-container">
+              <video id="fullscreen-video" controls muted>
+                <source src="video/Hospital Ochoa - Spot publicitario.mp4" type="video/mp4" >
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <br />
+    <br />
+    <!--rodape-->
+    <footer id="faleconoscofooter">
+      <h4>Canais de Atendimento</h4>
+      <ul>
+        <li>Telefone:</li>
+        <ul>
+          <li><a href="#">(86) 4002-8922</a></li>
+        </ul>
+        <li>Email:</li>
+        <ul>
+          <li>
+            <a href="mailto:hospital_estacio@gmail.com"
+              >hospital_estacio@gmail.com</a
+            >
+          </li>
+        </ul>
+      </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>

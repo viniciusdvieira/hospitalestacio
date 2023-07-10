@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="imagens/favicon1.ico" type="image/x-icon">
+</head>   
+<body id="bodyform">
+    <header>
+        <a href="index.html" class="logo"
+          ><img
+            src="imagens/logo2-menora.png"
+            alt="logo"
+            width="100"
+            height="110"
+        /></a>
+  
+        <nav>
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <a id="linkdrop" href="#">Convênios e Especialidades<span class="arrow-down"></span></a>
+            <div class="dropdown-content">
+              <a href="convenio.html">Convênios</a>
+              <a href="especialidades.html">Especialidades</a>
+            </div>
+          </div>
+          <a href="noticias.html">Notícias</a>
+          <a href="curiosidade.html">Curiosidades</a>
+          <a href="faleconosco.html">Fale Conosco</a>
+          <a href="form.html">Agendamento</a>
+        </nav>
+    </header>
+    <form method="post">
+        <h1>Dados Pessoais dos Pacientes</h1>
+        <p>Preencha o formulário abaixo e em breve entraremos em contato com você para mais informações.</p>
+        
+        <section>
+            <p>
+                <label for="nome">Nome Completo <strong><span aria-label="requerid" class="obrigatorio">*</span></strong></label>
+                <input type="text" name="nome" id="nome_usuario" class="inputform">
+            </p>
+            <p>
+                <label for="email">Email <strong><span aria-label="requerid" class="obrigatorio">*</span></strong> </label>
+                <input type="email" name="email" id="email_usuario" placeholder="meunome@exemplo.com" class="inputform">
+            </p>
+            <p>
+                <label for="genero">Gênero <strong><span aria-label="requerid" class="obrigatorio">*</span></strong></label>
+                <select name="genero" id="genero_usuario" class="inputform">
+                    <option value="*"></option>
+                    <option value="Homen">Homem</option>
+                    <option value="Mulher">Mulher</option>
+                    <option value="Outro">Outro</option>
+                    <option value="naoindenti">Não identificar</option>
+                </select>
+            </p>
+            <p>
+                <label for="numero">Número de Telefone</label>
+                <input type="tel" name="numero" id="numero_usuario" placeholder="(xx) xxxxx-xxxx" maxlength="11" class="inputform">
+            </p>
+            <p>
+                <label for="datanasci">Data de Nascimento</label>
+                <input type="date" name="datanasci" id="nasci_usuario">
+            </p>
+            <p>
+                <label for="endereco">Endereço <strong><span aria-label="requerid" class="obrigatorio">*</span></strong> </label>
+                <input type="text" name="endereco" id="enderecoprin" placeholder="Endereço Principal"><br>
+                <input type="text" name="endereco" id="complemento" placeholder="Complemento"><br>
+                <input type="text" name="endereco" id="cidade_usuario" placeholder="Cidade">
+                <input type="text" name="endereco" id="estado" placeholder="Estado"><br>
+                <input type="text" name="endereco" id="CEP" placeholder="Código Postal / CEP">
+            </p>
+            <p>
+                <label for="questionario">Você possui algum tipo de doença ou alergia?</label><br>
+                <input type="radio" name="questionario" id="questionario">Sim
+                <input type="radio" name="questionario" id="questionario">Não
+            </p>
+            <p>
+                <label for="textoquest">Se sim, informe abaixo quais são.</label><br>
+                <input type="text" name="textoquest" id="textoquest" placeholder="Escreva aqui...">
+            </p>
+            <p>
+                <label for="agenda">Agendamento</label><br>
+                <input type="datetime-local" name="agenda" id="agenda">
+            </p>  
+        </section>
+
+        <section>
+            <p>
+                <button type="submit">Confirmar a consulta</button>
+            </p>
+        </section>
+    </form>
+    <footer id="faleconoscofooter">
+        <h4>Canais de Atendimento</h4>
+        <ul>
+          <li>Telefone:</li>
+          <ul>
+            <li><a href="#">(86) 4002-8922</a></li>
+          </ul>
+          <li>Email:</li>
+          <ul>
+            <li>
+              <a href="mailto:hospital_estacio@gmail.com"
+                >hospital_estacio@gmail.com</a
+              >
+            </li>
+          </ul>
+        </ul>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
