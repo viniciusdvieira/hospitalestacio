@@ -12,7 +12,7 @@
 }
 
 :root {
-    --cor0: #00ffaa;
+    --cor0: #fdd9dc;
     --cor1: #ffa3ab;
     --cor2: #F51D2F;
     --cor3: #DB1A2A;
@@ -28,7 +28,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgba(5, 238, 64, 0.63);
     font-family: var(--font-padrao);
 }
 
