@@ -42,3 +42,13 @@ var arrowImage = document.getElementById("arrow-image");
       isUp = true;
     }
   });
+
+  // Obtém o elemento do hamburger e do dropdown
+const hamburger = document.getElementById('menudrop');
+const dropdown = document.querySelector('.dropdownmenu-content');
+
+// Adiciona um evento de clique ao hamburger
+hamburger.addEventListener('click', function() {
+  // Alterna a exibição do dropdown
+  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+});
