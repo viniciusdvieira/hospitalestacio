@@ -311,6 +311,111 @@ display: block;
 }
 
 
+#menudrop{
+    display: none;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    .logo img {
+      width: 80px;
+      height: auto;
+    }
+  
+    nav {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    nav a {
+      margin: 5px 0;
+    }
+  
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    content: "\25BC";
+    }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    }
+    
+    .dropdown-content a {
+    color: white; /* Alterei para branco para manter a consistência com os outros botões */
+    padding: 6px; /* Alterei para 10px para manter o mesmo espaçamento */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor1);
+    text-align: center;
+    }
+    
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+    
+    #linkdrop{
+        color: white;
+        padding: 10px;
+        padding-top: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition-duration: .5s;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    #linkdrop:hover{
+        background-color: var(--cor1);
+        color: rgba(143, 0, 12, 0.776);
+        border-radius: 5px;
+    }
+    .arrow-down::after {
+        content: "\25BC"; /* Código Unicode para a seta para baixo */
+        display: inline-block;
+        margin-left: 5px; /* Espaçamento entre o texto e a seta */
+    }
+    .dropdown-content > a{
+        color: #8e000cc6;
+    }
+    
+    .dropdown-content > a:hover{
+        background-color: var(--cor2);
+        color:white;
+    }
+
+    #menudrop{
+        display: block;
+        text-decoration: none;
+        color: white;
+    }
+
+    .dropdownmenu-content{
+        display: none;
+    }
+
+    .dropdownmenu:hover .dropdownmenu-content{
+        display: block;
+    }
+
+  }
+
 .list-especialidade > ul{
     list-style-type: '🔴';
     list-style-position: inside;
